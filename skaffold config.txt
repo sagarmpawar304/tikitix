@@ -1,0 +1,4 @@
+in currernt directory run -  
+PS C:\projects\ticket-project> $env:GOOGLE_APPLICATION_CREDENTIALS="./ticketing-new-86fa5a13fcaf.json" 
+
+$env:GOOGLE_APPLICATION_CREDENTIALS="./ticketing-new-86fa5a13fcaf.json"
