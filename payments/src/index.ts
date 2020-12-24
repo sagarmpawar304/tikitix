@@ -4,7 +4,7 @@ import { natsWrapper } from './nats-wrapper'
 import { OrderCancelledListener } from './events/listeners/order-cancelled-listner'
 import { OrderCreatedListener } from './events/listeners/order-created-listener'
 
-const dbConnect = async () => {
+const start = async () => {
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined')
   }
@@ -57,4 +57,4 @@ const dbConnect = async () => {
   })
 }
 
-dbConnect()
+start()
