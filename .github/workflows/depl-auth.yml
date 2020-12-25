@@ -13,6 +13,6 @@ jobs:
       - run: cd auth && docker build -t smpawar001/auth .
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
         env:
-          DOCOKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
+          DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWARD}}
       - run: docker push smpawar001/auth
